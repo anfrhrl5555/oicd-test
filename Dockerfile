@@ -1,6 +1,6 @@
-FROM 192.168.0.37:5000/python:3.9
+FROM 192.168.0.6:5000/python:3.9
 
-RUN apt-get update &&  apt-get -y install vim
+RUN apt-get update &&  apt-get -y install vim && apt-get -y install telnet && apt-get -y install nfs-common
 
 RUN mkdir -p /usr/src/app
 
